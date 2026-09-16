@@ -1,33 +1,33 @@
-timestamp: "16150334276"
+timestamp: "16150838356"
 arch: ICE40
 fpga_info {
-  fpga_id: "ice40hx1k-tq144"
-  part_num: "ICE40HX1K-TQ144"
-  size: "1k"
+  fpga_id: "ice40hx4k-tq144-8k"
+  part_num: "ICE40HX4K-TQ144"
+  size: "8k"
   ice40_params {
-    type: "hx1k"
-    package: "tq144"
+    type: "hx8k"
+    package: "tq144:4k"
   }
 }
-verbosity {
-  all: false
-  synth: false
-  pnr: false
-}
 environment {
-  platform_id: "darwin-arm64"
+  platform_id: "linux-x86-64"
   is_windows: false
   terminal_mode: FORCE_TERMINAL
   theme_name: "light"
   debug_level: 0
-  yosys_path: "/Users/katrinalin/.apio/packages/oss-cad-suite/share/yosys"
-  trellis_path: "/Users/katrinalin/.apio/packages/oss-cad-suite/share/trellis"
-  scons_shell_id: "zsh"
-  xilinx_prjxray_db_path: "/Users/katrinalin/.apio/packages/openxc7/share/nextpnr/external/prjxray-db"
-  xilinx_chipdb_path: "/Users/katrinalin/.apio/packages/openxc7/chipdb"
+  yosys_path: "/home/abdrhmn/.apio/packages/oss-cad-suite/share/yosys"
+  trellis_path: "/home/abdrhmn/.apio/packages/oss-cad-suite/share/trellis"
+  scons_shell_id: "bash"
+  xilinx_prjxray_db_path: "/home/abdrhmn/.apio/packages/openxc7/share/nextpnr/external/prjxray-db"
+  xilinx_chipdb_path: "/home/abdrhmn/.apio/packages/openxc7/chipdb"
 }
 apio_env_params {
   env_name: "default"
-  board_id: "icestick"
+  board_id: "hailboard"
   top_module: "Lab2"
+}
+target {
+  upload {
+    programmer_cmd: "dfu-util -d 1209:E270 -a 0 -D $SOURCE"
+  }
 }
