@@ -6,7 +6,7 @@ module Museum_Security(
     output A
 );
 
-
+assign A = (H & (D | V | M)) | (D & V);
 
 
 endmodule

@@ -1,0 +1,33 @@
+timestamp: "16150334276"
+arch: ICE40
+fpga_info {
+  fpga_id: "ice40hx1k-tq144"
+  part_num: "ICE40HX1K-TQ144"
+  size: "1k"
+  ice40_params {
+    type: "hx1k"
+    package: "tq144"
+  }
+}
+verbosity {
+  all: false
+  synth: false
+  pnr: false
+}
+environment {
+  platform_id: "darwin-arm64"
+  is_windows: false
+  terminal_mode: FORCE_TERMINAL
+  theme_name: "light"
+  debug_level: 0
+  yosys_path: "/Users/katrinalin/.apio/packages/oss-cad-suite/share/yosys"
+  trellis_path: "/Users/katrinalin/.apio/packages/oss-cad-suite/share/trellis"
+  scons_shell_id: "zsh"
+  xilinx_prjxray_db_path: "/Users/katrinalin/.apio/packages/openxc7/share/nextpnr/external/prjxray-db"
+  xilinx_chipdb_path: "/Users/katrinalin/.apio/packages/openxc7/chipdb"
+}
+apio_env_params {
+  env_name: "default"
+  board_id: "icestick"
+  top_module: "Lab2"
+}
