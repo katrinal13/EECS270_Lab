@@ -1,0 +1,13 @@
+[*] GTKWave display configuration for 'apio sim Lab3_tb.v'
+[*] THIS FILE WAS GENERATED AUTOMATICALLY BY APIO.
+[*] DO NOT EDIT IT MANUALLY!
+[*] To customize this file, run 'apio sim Lab3_tb.v'
+[*] and save the file from GTKWave.
+
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+
+[*]
+TestBenchLab3.LEDG[3:0]
+TestBenchLab3.LEDR[6:0]
+TestBenchLab3.LEDY[3:0]
+TestBenchLab3.SW[17:0]

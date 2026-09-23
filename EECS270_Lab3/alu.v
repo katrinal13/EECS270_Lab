@@ -25,12 +25,12 @@ module alu4(
         .A(A),
         .B(B_sub),
         .Cin(Op == 2'b01),
-        .Sum(AddSubResult)
+        .Sum(AddSubResult),
         .Overflow(AddSubOver)
     );
 
-    assign AndResult = A && B;
-    assign OrResult  = A || B;
+    assign AndResult = A & B;
+    assign OrResult  = A | B;
     assign XorResult = A ^ B;
 
     

@@ -5,12 +5,12 @@ module Lab3(
     output [3:0] LEDY
 );
 
-    wire [4:0] A, B, Result;
+    wire [3:0] A, B, Result;
     wire [1:0] Op;
     wire       Overflow;
 
-    assign A  = SW[3:0];
-    assign B  = SW[17:14];
+    assign A = SW[3:0];
+    assign B = SW[17:14];
     assign Op = SW[9:8];
 
     alu4 ALU(

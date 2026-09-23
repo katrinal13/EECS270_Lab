@@ -8,7 +8,7 @@ module ripple_adder_4(
 
     wire c1, c2, c3,c4;
 
-    full_adder (
+    full_adder FA(
         .A(A[0]),
         .B(B[0]),
         .Cin(Cin),
@@ -16,28 +16,28 @@ module ripple_adder_4(
         .Cout(c1)
     );
 
-    full_adder FA(
-        A(A[1]),
+    full_adder FA1(
+        .A(A[1]),
         .B(B[1]),
         .Cin(c1),
         .Sum(Sum[1]),
         .Cout(c2)
     );
 
-    full_adder FA(
+    full_adder FA2(
         .A(A[2]),
         .B(B[2]),
         .Cin(c2),
         .Sum(Sum[2]),
-        .cout(c2)
+        .Cout(c3)
     );
 
-    full_adder FA(
+    full_adder FA3(
         .A(A[3]),
         .B(B[3]),
         .Cin(c3),
         .Sum(Sum[3]),
-        .cout(c4)
+        .Cout(c4)
     );
     assign Overflow = c4;
 
