@@ -37,8 +37,8 @@ module alu4(
     
     assign Result = (Op == 2'b00) ? AddSubResult :
                      (Op == 2'b01) ? AddSubResult :
-                     (Op == 2'b10) ? OrResult    :
-                     AndResult;
+                     (Op == 2'b10) ? AndResult    :
+                     OrResult;
 
     // CarryOut only meaningful for add/sub; 0 otherwise
     assign Overflow = (Op == 2'b00 || Op == 2'b01) ? AddSubOver : 1'b0;

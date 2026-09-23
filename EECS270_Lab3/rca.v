@@ -39,6 +39,6 @@ module ripple_adder_4(
         .Sum(Sum[3]),
         .Cout(c4)
     );
-    assign Overflow = c4;
+    assign Overflow = (c3 ^ c4);
 
 endmodule
