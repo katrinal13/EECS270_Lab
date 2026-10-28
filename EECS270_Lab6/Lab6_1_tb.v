@@ -28,9 +28,24 @@ module D_FlipFlop_tb;
 
         // TODO: Test 2: Changing D while CLK = 1
         // should NOT change Q
-        
+        D = 1;
+        #10;
 
         //WRITE MORE TEST CASES HERE
+        // Test 3: Changing CLK from 1 -> 0
+        // should NOT change Q
+        CLK = 0; #5;
+
+        // Test 4: Changing D while CLK = 0
+        // should NOT change Q
+        D = 0;
+        #10;
+
+        D = 1;
+        #10;
+
+        CLK = 1;
+        #10;
 
         $finish;
     end

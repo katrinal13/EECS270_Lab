@@ -1,0 +1,104 @@
+$date
+	Wed Oct 28 14:50:25 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module D_FlipFlop_tb $end
+$var wire 1 ! Qn $end
+$var wire 1 " Q $end
+$var reg 1 # CLK $end
+$var reg 1 $ D $end
+$scope module dut $end
+$var wire 1 # CLK $end
+$var wire 1 $ D $end
+$var wire 1 ! Qn $end
+$var wire 1 % QL $end
+$var wire 1 " Q $end
+$scope module Follower $end
+$var wire 1 # EN $end
+$var wire 1 & R $end
+$var wire 1 ' S $end
+$var wire 1 ! Qn $end
+$var wire 1 " Q $end
+$var wire 1 % D $end
+$scope module SR $end
+$var wire 1 " Q $end
+$var wire 1 ! Qn $end
+$var wire 1 & R $end
+$var wire 1 ' S $end
+$upscope $end
+$upscope $end
+$scope module Leader $end
+$var wire 1 $ D $end
+$var wire 1 ( EN $end
+$var wire 1 ) R $end
+$var wire 1 * S $end
+$var wire 1 + Qn $end
+$var wire 1 % Q $end
+$scope module SR $end
+$var wire 1 % Q $end
+$var wire 1 + Qn $end
+$var wire 1 ) R $end
+$var wire 1 * S $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1+
+0*
+1)
+1(
+0'
+0&
+0%
+0$
+0#
+x"
+x!
+$end
+#15000
+1!
+0)
+0"
+0(
+1&
+1#
+#25000
+1$
+#35000
+1%
+0+
+1*
+1(
+0&
+0#
+#40000
+1+
+0%
+1)
+0*
+0$
+#50000
+1%
+0+
+0)
+1*
+1$
+#60000
+1"
+0*
+0!
+0(
+1'
+1#
+#70000
