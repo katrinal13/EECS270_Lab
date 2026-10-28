@@ -10,8 +10,8 @@ module SR_Latch (
     output wire Qn
 );
 
-assign Q = ~(R | Qn);
-assign Qn = ~(S | Q);
+assign Q = R ~| Qn;
+assign Qn = S ~| Q;
 
 endmodule
 
@@ -45,7 +45,7 @@ module D_FlipFlop (
 );
 
 wire QL;
-D_Latch Leader(.D(D), .EN(~CLK), .Q(QL), .Qn(Qn));
+D_Latch Leader(.D(D), .EN(~CLK), .Q(QL), .Qn());
 D_Latch Follower(.D(QL), .EN(CLK), .Q(Q), .Qn(Qn)); 
 
 endmodule
