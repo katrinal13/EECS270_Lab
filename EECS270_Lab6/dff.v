@@ -44,13 +44,13 @@ module D_FlipFlop (
     output wire Qn
 );
 
-wire QL;
-D_Latch Leader(.D(D), .EN(~CLK), .Q(QL), .Qn());
-D_Latch Follower(.D(QL), .EN(CLK), .Q(Q), .Qn(Qn)); 
+//wire QL;
+//D_Latch Leader(.D(D), .EN(~CLK), .Q(QL), .Qn());
+//D_Latch Follower(.D(QL), .EN(CLK), .Q(Q), .Qn(Qn)); 
 
 // Synthesis Code
-// always @(posedge CLK) begin
-//     Q <= D;
-// end
+ always @(posedge CLK) begin
+     Q <= D;
+ end
 
 endmodule

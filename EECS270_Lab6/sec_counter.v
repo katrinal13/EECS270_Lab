@@ -6,7 +6,7 @@ module sec_counter (
 
 parameter zero = 2'b00;
 parameter one = 2'b01;
-parameter two = 2'10;
+parameter two = 2'b10;
 parameter three = 2'b11;
 
 initial seconds = zero;

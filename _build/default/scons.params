@@ -1,4 +1,4 @@
-timestamp: "14145651005"
+timestamp: "28145128746"
 arch: ICE40
 fpga_info {
   fpga_id: "ice40hx1k-tq144"
@@ -10,16 +10,16 @@ fpga_info {
   }
 }
 environment {
-  platform_id: "darwin-arm64"
+  platform_id: "linux-x86-64"
   is_windows: false
   terminal_mode: FORCE_TERMINAL
   theme_name: "light"
   debug_level: 0
-  yosys_path: "/Users/katrinalin/.apio/packages/oss-cad-suite/share/yosys"
-  trellis_path: "/Users/katrinalin/.apio/packages/oss-cad-suite/share/trellis"
+  yosys_path: "/home/abdrhmn/.apio/packages/oss-cad-suite/share/yosys"
+  trellis_path: "/home/abdrhmn/.apio/packages/oss-cad-suite/share/trellis"
   scons_shell_id: "zsh"
-  xilinx_prjxray_db_path: "/Users/katrinalin/.apio/packages/openxc7/share/nextpnr/external/prjxray-db"
-  xilinx_chipdb_path: "/Users/katrinalin/.apio/packages/openxc7/chipdb"
+  xilinx_prjxray_db_path: "/home/abdrhmn/.apio/packages/openxc7/share/nextpnr/external/prjxray-db"
+  xilinx_chipdb_path: "/home/abdrhmn/.apio/packages/openxc7/chipdb"
 }
 apio_env_params {
   env_name: "default"
