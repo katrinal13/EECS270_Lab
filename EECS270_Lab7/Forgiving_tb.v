@@ -17,7 +17,7 @@ module ForgivingTestbench;
   );
 
   initial begin
-
+    $dumpvars(0, ForgivingTestbench);
     // Initialize inputs
     KEY[3] = 1'b1;
     SW = 3'b000;
